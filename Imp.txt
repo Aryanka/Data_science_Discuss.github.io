@@ -1,0 +1,104 @@
+SLOPE: slope talks about the distance bw lines and x axis. It talks about steepness/or how slant it is of Regression Line.
+
+Constant:The point where regression line touches to yaxis is known as constant. Thats why its knoen as y intercept.
+
+standard err is standard deviation in population.
+
+Correlation shows relationship bw all indep var along with dep var. 
+			
+R sq shows how close the data are to the fitted regression line or to what extent the variance of one variable explains the variance of the second variable. It is squared of correlation.
+			
+Diff bw rsq and adj r2:
+both talks about ind var dependent on dep var. diff is rsq consider all ind var.
+Adj r2 not consider all ind var. It will chk each var contribution of independent var. It will take ind var which is least capable of pred dep var. it will remove the least cap var and take others.
+
+
+Standard err in central theorem 2 is marginal error. It is variance in sample .	
+Standard err in ml says at which rate my model can go wrong.
+It gives range of high or down.
+
+
+Logistic reg is reg in which we have more binary target var(0,1).
+Two things used in validating in logistic reg.
+1. Confusion matrix
+2. ROC curve or AUC curve.
+
+confusion matrix tells how good is predicted value as compared to actual value.
+
+The recall is the measure of our model correctly identifying True Positives. recall tells us how many we correctly identified.
+
+Accuracy is the ratio of the total number of correct predictions and the total number of predictions.
+
+Mean is more sensitive to outliers not median. mean observed affect of each data point. Whether median wont done.
+Advantage of mean over median is 
+
+Anoova is preffered in more than 2 means why not T test, even we can do it with T test.
+Ans is bcz by doing t test we have more than 5% err rate acc to variables. So, in more than two var we should go for annova to reduce err rate/alpha.
+
+
+
+counting occurences of event is freq dist
+problem is to compare sample wwith pop data bcz less no of pts in sample.
+
+Can sample mean and sd predict population mean and sd?
+yes by confidence lvl. convidence lvl is correctness measure for any given mean. normally its 95%.
+confidence interval uses confidence lvl for defining the range how much sample mean can varies.	
+confidence intvl tells how good is sample, narrow the sample the good is CI. It gives range in which sample mean can vary. It gives range where mean can present.
+
+Fact in central limit theorem: sampling dist of mean is normally distributed irrespective of population whether positive or -ve skewed.
+
+The standard err of sampling dist of mean then it is equal to sd of population.
+
+Null hypothesis is constant thats why we always test null.
+
+Chances of rejecting true null hypothesis is type 1 err. If my hypothesis is true and im rejecting this. true null hypothesis is rejected.
+
+Chances of accpeting true null hypothesis is type 2 err. means im not rejecting false null hypothesis.
+
+T-test is used to find statistical significance bw the means of 2 groups which may be related in certain features.
+T-test gives the diff of the mean values when sample size is small and when population sd is not available. i.e, comparing mean values.
+Assumptions in t test:
+1 population distribution is normal
+2 samples are random & independent
+3 sample size is small and population sd not known.
+
+ F statistic is simply a ratio of 2 variances.
+
+
+
+                                                                                        SQL
+
+
+
+Smallest data in sql is data value.
+horizontal row is known as records and for columns is known as fields.
+
+Objects in sql database are
+tables, views, stored procedures and functions.
+
+Sql is not case sensitive.
+
+
+
+
+
+
+
+
+
+Tableau
+
+DD/MM/YYYY HHMM:SS
+
+Alone dd/mm/ss/h and s are categrical and whole thing is discrete.
+
+Attribute perform in numerical fnc. the operation it do is present data in original format it will not do any calculations.
+
+
+Diff bw null and blank?
+Null means there is no value behind this, the data is not filled.
+This box taken some bit of memory.
+
+
+
+
