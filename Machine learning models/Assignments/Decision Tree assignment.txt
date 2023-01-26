@@ -1,0 +1,100 @@
+Q1. Main objective of DT algo?
+
+Decision tree is a tree based algorithm where it performs classification based on YES/NO quetions on every level depending upon the probability.
+
+Q2. What is homogeneity and how do you measure it?
+
+Homogenity means same type.  It allows a decision tree to lean towards one factor with the help of probability. Homogeneity is measured by:
+Reduction in Variance - Lesser the variance of child node the better the split.
+Gini Index - It is the measure of extent/degree/probability of a particular variable. Lower the Gini Impurity, higher is the homogeneity of the node.
+Information gain - Higher the  Information gain of child node the better the split.
+Chi square - Choose node with higher Chi-Square value.
+
+Q3. . What are the various split criteria in what case will you use which?
+
+For continous variable:
+i. Reduction in Variance - In continous features it uses variance as a measure for deciding the feature on which node is split into child nodes. Variance is used for calculating the homogeneity of a node. If a node is entirely homogeneous, then the variance is zero. Variance with least value will pick pure nodes. Lesser the variance of child node the better the split.
+steps to split a decision tree using reduction in variance: 
+Step 1) For each split it calculates the variance of each child node and calculate the weighted average variance of child nodes.
+Step 2) It will select the split with low variance.
+Step3) Performs same steps until homogeneity is achieved.
+
+For categorical variable:
+i. Gini Index - It is the measure of extent/degree/probability of a particular variable.
+Lower the Gini Impurity, higher is the homogeneity of the node. The Gini Impurity of a pure node is zero.
+Steps to split a decision tree using Gini Impurity:
+Step 1) For each split it calculates the Gini Impurity of each child node and calculate the weighted average Gini Impurity of child nodes.
+Step 2) It will select the split with low Gini Impurity.
+Step3) Performs same steps until homogeneity is achieved.
+
+
+ii. Information gain - . Information Gain is used for splitting the nodes when the target variable is categorical. Entropy is used for calculating the purity of a node. Entropy with least value will pick pure nodes. . The entropy of a homogeneous node is zero. Since we subtract entropy from 1, the Information Gain is higher for the purer nodes with a maximum value of 1.
+Steps to split a decision tree using Information Gain:
+Step 1) For each split it calculates the entropy of each child node and calculate the weighted average entropy of child nodes.
+Step 2) It will select the split with low entropy or highest information gain.
+Step3) Performs same steps until homogeneity is achieved.
+
+iii. Chi square test -  Take the sum of Chi-Square values for all the classes in a node to calculate the Chi-Square for that node. Higher the value, higher will be the differences between parent and child nodes, i.e., higher will be the homogeneity.
+Steps to split a decision tree using Chi-Square:
+
+step 1) For each split, individually calculate the Chi-Square value of each child node by taking the sum of Chi-Square values for each class in a node. Calculate the Chi-Square value of each split as the sum of Chi-Square values for all the child nodes.
+step 2) Select the split with higher Chi-Square value.
+step 3) Until you achieve homogeneous nodes, repeat steps 1-3.
+
+
+
+Q4. What is the advantage of Decision tree over linear/logistic regression?
+
+Decision tree is easy to interpret. 
+For non linear relationship decision tree is good than linear regression.
+
+
+Q5.  Explain an example where decision tree will fail to perform.
+
+i) DT is more likely to get affected from outliers.
+ii) It uses Greedy algorithm which can be biased to get best optimal solution.
+
+
+Q6. What is over fitting?
+
+overfitting is a condition when we train it with a lot of data. When a model gets trained with so much data, it starts learning from the noise and inaccurate data entries in our data set negatively and it impacts the performance of the model on new data.
+
+Q7.  Can a regression model overfit, if yes then how?
+
+In Regression model if model learns the data so accurately, it will also learned noise in the data. And during testing it will fails to predict testing accuracy. So, it means model has low bias and high variance(low training error and high testing error). This is how linear reg will overfit.
+The performance can be measured using the percentage of accuracy observed in both data sets to conclude on the presence of overfitting. If the model performs better on the training set than on the test set, it means that the model is likely overfitting.
+
+
+Q8. What is the best use case for decision tree?
+
+i) It can be best used where we want to see the most important features. 
+ii) It is not affected from outliers.
+iii) Feature scaling is not required in tree because there is no use of distance measure in this algorithm.
+iv) It can be shown to non technical background also, because it is easy to understand.
+v) It will take less time in implementation.
+
+
+Q9. Why is decision tree called a greedy technique?
+
+Decision tree greedy technique finds a optimal solution(which demands either minimum or maximum result). It provides feasible solution which satisfies the constraints. It will not consider all features in same parameter.
+Decision tree provides optimal solution which is feasible solution with the best result. There can be only one optimal solution. 
+In each split, decision tree will look for best feasible solution and tree keeps on following this procedure till it reached to optimal solution in terms of features. 
+
+for eg: A company is looking for 1 person as data scientist role out of 100 candidates. Now, lets give tree some features like resume, experience, CTC, accomodation etc. Based on these features decision tree need to find optimal solution. After multiple splits experience is picked as as optimal solution for an interview in company and suppose he/she got selected. Now, this is how decision tree finds experience feature as optimal solution here which satisfies company's requirement(constraints). So, this is decision tree greedy approach. However, its not true that optimal solution always give good result. In this example, maybe decision tree skips best candidate based on other features.
+
+
+Q10. What is pruning?
+
+It is another method that can help us avoid overfitting. It helps in improving the performance of the tree by cutting the nodes or sub-nodes which are not significant. It removes the branches which have very low importance.
+(i) Pre-pruning – we can stop growing the tree earlier, which means we can prune/remove/cut a node if it has low importance while growing the tree.
+
+(ii) Post-pruning – once our tree is built to its depth, we can start pruning the nodes based on their significance.
+
+
+
+Q11. What’s the functioning difference between Decision Tree Regressor and Decision Tree Classifier?
+
+DTR uses reduction in variance and it takes mean of all the sample in node and predicts the value.
+
+DTC uses gini and entropy and it takes mode of all the sample in node and predicts the value.
+
