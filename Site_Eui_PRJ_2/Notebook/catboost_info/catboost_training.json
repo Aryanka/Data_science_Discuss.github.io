@@ -1,0 +1,12 @@
+{
+"meta":{"test_sets":["test"],"test_metrics":[{"best_value":"Min","name":"RMSE"}],"learn_metrics":[{"best_value":"Min","name":"RMSE"}],"launch_mode":"Train","parameters":"","iteration_count":500,"learn_sets":["learn"],"name":"experiment"},
+"iterations":[
+{"learn":[58.06163095],"iteration":0,"passed_time":0.8544405548,"remaining_time":426.3658368,"test":[57.01622404]},
+{"learn":[44.7380633],"iteration":75,"passed_time":65.30889624,"remaining_time":364.3548948,"test":[44.47013896]},
+{"learn":[41.8158384],"iteration":150,"passed_time":130.3428949,"remaining_time":301.2560947,"test":[42.54419015]},
+{"learn":[40.40904368],"iteration":225,"passed_time":196.7518221,"remaining_time":238.5398197,"test":[41.97103403]},
+{"learn":[39.52585102],"iteration":300,"passed_time":258.4594696,"remaining_time":170.8751975,"test":[41.73724467]},
+{"learn":[38.82034949],"iteration":375,"passed_time":319.7886796,"remaining_time":105.4622241,"test":[41.54100641]},
+{"learn":[38.22816047],"iteration":450,"passed_time":379.7425514,"remaining_time":41.25805991,"test":[41.3926305]},
+{"learn":[37.85872958],"iteration":499,"passed_time":418.6628566,"remaining_time":0,"test":[41.31076992]}
+]}
